@@ -1,4 +1,4 @@
-local BaseUrl = "https://raw.githubusercontent.com/slayeryx/Script-Games/refs/heads/main/"
+local BaseUrl = "https://raw.githubusercontent.com/slayeryx/ScriptGames/refs/heads/main/"
 if game.PlaceId ~= 6516141723 then
 else
 if game.PlaceId ~= 6839171747  then
