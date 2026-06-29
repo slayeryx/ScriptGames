@@ -1,4 +1,4 @@
-local BaseUrl = "https://raw.githubusercontent.com/bocaj111004/Abysall/refs/heads/main/"
+local BaseUrl = "https://github.com/slayeryx/Script-Games/tree/main/Door"
 if game.PlaceId ~= 6516141723 then
     loadstring(game:HttpGet(BaseUrl .. "/Doors/Main.luau"))()
 else
