@@ -37,6 +37,22 @@ return function(Window)
 			Library.ShowCustomCursor = Value
 		end,
 	})
+	MenuGroup:AddToggle("QueueOnTeleport", {
+		Text = "Queue On Teleport",
+		Default = false,
+		Tooltip = "Automatically reloads Abysall when you teleport to another server.",
+		Callback = function(Value)
+			if not Value then
+				return
+			end
+
+			if queue_on_teleport then
+				queue_on_teleport([[
+					loadstring(game:HttpGet("https://raw.githubusercontent.com/therealcookiemonsterof1966/AbysallContinued/main/Games/Doors/Main.luau"))()
+				]])
+			end
+		end,
+	})
 
 	MenuGroup:AddDropdown("UILibrary", {
 		Text = "UI Style",
@@ -88,7 +104,7 @@ return function(Window)
 	MenuGroup:AddLabel("Menu bind"):AddKeyPicker("MenuKeybind", { Default = "RightShift", NoUI = true, Text = "Menu keybind" })
 	
 	MenuGroup:AddButton("Copy Discord Invite", function()
-		toclipboard("https://dsc.gg/abysallhub")
+		toclipboard("https://dsc.gg/A")
 		Library:Notify("Discord invite copied.")
 	end)
 	
