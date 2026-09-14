@@ -15,7 +15,7 @@ getgenv().Abysall = {
     Legit = true
 }
 
-local BaseUrl = "https://raw.githubusercontent.com/therealcookiemonsterof1966/AbysallContinued/main/"
+local BaseUrl = "https://raw.githubusercontent.com/slayeryx/ScriptGames/main/"
 
 getgenv().Abysall = {
     Environment = loadstring(game:HttpGet(BaseUrl .. "Components/Environment.luau"))(),
